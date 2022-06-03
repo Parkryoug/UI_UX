@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brother</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <script src="javascript/jquery-1.12.3.js"></script>
+    <!-- defer 속성은 script가 잠깐 지연 되도록 하여 -->
+    <!-- HTML 구문 분석이 완료된 후 스크립트를 실행하도록 함 -->
+    <script src="javascript/script.js" defer type="text/javascript"></script>
+</head>
+<body>
+    <!-- 레이어 팝업창 영역 -->
+    <div id="modal">
+        <div class="modal_up">
+            <div class="uptitle">
+                상반기 가이드 채용 공고
+            </div>
+            <div class="upbody">
+                국내 최고의 여행사로 발돋움하고 있는 Brother에서는
+                열정을 가지고 진취적으로 도전하는 가이드분들을 모집합니다.
+                <strong>Brother</strong>과 함께 하실 역량있는 인재들의 많은 지원을 기다립니다.
+            </div>
+            <div class="btn">닫기</div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+    <header>
+        <!-- .top은 .logo와 .menu를 묶어줌 -->
+        <div class="top">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="로고 이미지"></a>
+            </div>
+            <nav class="menu">
+                <ul class="navi">
+                    <li>
+                        <a href="#">회사소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">비전</a></li>
+                            <li><a href="#">수상내역</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    <a href="#">국내여행</a>
+                    <ul class="submenu">
+                        <li><a href="#">축제</a></li>
+                        <li><a href="#">코스</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                    </li>
+                    <li>
+                        <a href="#">해외여행</a>
+                        <ul class="submenu">
+                            <li><a href="#">축제</a></li>
+                            <li><a href="#">코스</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">인재채용</a>
+                        <ul class="submenu">
+                            <li><a href="#">직무소개</a></li>
+                            <li><a href="#">채용공고</a></li>
+                            <li><a href="#">가이드라인</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- .bodywrap은 .imgslide와 .contents를 묶어줌 -->
+    <div class="bodywrap">
+        <div class="imgslide">
+            <a href="#">
+                <img src="images/imgslide1.png" alt="img1">
+                         
+            </a>
+            <a href="#">
+                <img src="images/imgslide2.png" alt="img2">
+                
+            </a>
+            <a href="#">
+                <img src="images/imgslide3.png" alt="img3">
+                
+            </a>
+        </div>
+        <div class="contents">
+            <div class="notice">
+                <div class="tab">
+                    <h4>공지사항</h4>
+                </div>
+                <ul>
+                    <li><a href="#">
+                    상반기 신입/경력 가이드 채용 공고
+                    <span>2022.06.01</span>
+                    </a></li>                    
+                    <li><a href="#">
+                    2022 대한민국 관광공모전 기념품 부문
+                    <span>2022.06.02</span>
+                    </a></li>
+                    <li><a href="#">
+                    로컬여행 호스트 과정 교육생 모집
+                    <span>2022.06.03</span>
+                    </a></li>
+                    <li><a href="#">
+                    외래관광객 대상 청와대 연계 방한상품 개발 추진
+                    <span>2022.06.06</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <div class="tab">
+                    <h4>갤러리</h4>
+                </div>
+                <ul>
+                    <li><a href="#"><img src="images/img1.png" alt="갤러리이미지1"></a></li>
+                    <li><a href="#"><img src="images/img2.png" 
+                    alt="갤러리이미지2"></a></li>
+                    <li><a href="#"><img src="images/img3.png" 
+                    alt="갤러리이미지3"></a></li>
+                </ul>
+            </div>
+            <div class="shortcut">
+                <a href="#">
+                    <img src="images/shortcut.jpg" alt="바로가기">
+                    <span class="sctext">바로가기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copy">
+            COPYRIGHT ©	by WEBDESIGN. ALL RIGHTS RESERVED
+        </div>
+        <div class="site">
+            <div class="btmenu">
+                <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">AGREEMENT</a></li>
+                    <li><a href="#">GUIDE</a></li>
+                </ul>
+            </div>
+            <div class="familysite">
+                <select name="sitelist">
+                    <option value="#">대한민국 구석구석</option>
+                    <option value="#">문화체육관광부</option>
+                    <option value="#">한국관광공사</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="javascript/vegas.min.js"></script>
+    <script>
+        $(function(){
+            // 문서 전체(body태그)에 플러그인 적용함
+            $('body').vegas({                
+                // 배경 이미지 3개로 이루어진 배열 소스 지정
+                slides: [{ src: 'images/nature-1.jpg' },
+                    { src: 'images/nature-2.jpg' }, { src: 'images/nature-3.jpg' },                
+                    // 동영상을 재생할 수 없을 경우를 위해
+                    // 대체 이미지 지정함
+                    {src:'images/sea.jpg',
+                    // video{} 안에 배경 동영상과 옵션값 지정함
+                    video:{
+                        // src 속성을 사용해 동영상 지정해 줌
+                        src:['videos/sea.mp4'],
+                        // loop속성을 사용해 동영상 반복 여부 지정
+                        loop:true,
+                        // 동영상을 무음상태(음소거 상태)로 만들어 줌
+                        mute:true
+                    }
+                }
+            ]
+            });
+        });
+    </script>
+
+</body>
+</html>
